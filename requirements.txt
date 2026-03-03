@@ -1,9 +1,1 @@
 aiogram
-aiohttp
-asyncpg
-requests
-yt-dlp
-telethon
-qrcode
-pillow
-python-dotenv
