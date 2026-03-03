@@ -6,12 +6,10 @@ from config import BOT_TOKEN
 bot = Bot(BOT_TOKEN)
 dp = Dispatcher()
 
-# ✅ START komandasi
 @dp.message(CommandStart())
 async def start_handler(message: types.Message):
-    await message.answer("🚀 Bot ishlayapti! /start ishladi")
+    await message.answer("🚀 Bot ishlayapti!")
 
-# oddiy message
 @dp.message()
 async def echo(message: types.Message):
     await message.answer("📩 Xabar keldi")
@@ -19,5 +17,6 @@ async def echo(message: types.Message):
 async def main():
     await dp.start_polling(bot)
 
+# ✅ ENG MUHIM JOY
 if name == "main":
     asyncio.run(main())
